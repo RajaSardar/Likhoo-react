@@ -1,10 +1,209 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 const PoemsByTags = () => {
     return (
-        <div>
-            Poems-by-tags Screen
-        </div>
+        <main className="lko-main">
+            <div className="lko-authors">
+                <section className="lko-read-list">
+                    <div className="lko-read-list-header"><span className="lko-authors-header">#love</span></div>
+                    <div className="lko-authors-list-container">
+                        <div className="lko-authors-list">
+                            <Link to="/">I can give you a voice</Link>
+                            <Link to="/">What is Suman's mind / face phrase</Link>
+                            <Link to="/">Have asked for rebirth</Link>
+                            <Link to="/">Everyone is fascinated by the much-awaited lie / Face verse</Link>
+                            <Link to="/">All leaves of dwarf trees</Link>
+                            <Link to="/">Snowflake</Link>
+                            <Link to="/">How many times to the bank of the river</Link>
+                            <Link to="/">Remember to thank</Link>
+                            <Link to="/">Geet apni pyaar ki main</Link>
+                            <Link to="/">Sitting / imprinted verse</Link>
+                            <Link to="/">To the darkest of the world</Link>
+                            <Link to="/">We chose the loser</Link>
+                            <Link to="/">I miss you</Link>
+                            <Link to="/">Take off you / face verse</Link>
+                            <Link to="/">O temple conch, bells / inscribed verse</Link>
+                            <Link to="/">Daydream / Face phrase of desires</Link>
+                            <Link to="/">All kites flew</Link>
+                            <Link to="/">Weeped bird</Link>
+                            <Link to="/">Resistant will all have a tone</Link>
+                            <Link to="/">How many words will be returned</Link>
+                        </div>
+                        <div className="lko-authors-list">
+                            <Link to="/">I can give you a voice</Link>
+                            <Link to="/">What is Suman's mind / face phrase</Link>
+                            <Link to="/">Have asked for rebirth</Link>
+                            <Link to="/">Everyone is fascinated by the much-awaited lie / Face verse</Link>
+                            <Link to="/">All leaves of dwarf trees</Link>
+                            <Link to="/">Snowflake</Link>
+                            <Link to="/">How many times to the bank of the river</Link>
+                            <Link to="/">Remember to thank</Link>
+                            <Link to="/">Geet apni pyaar ki main</Link>
+                            <Link to="/">Sitting / imprinted verse</Link>
+                            <Link to="/">To the darkest of the world</Link>
+                            <Link to="/">We chose the loser</Link>
+                            <Link to="/">I miss you</Link>
+                            <Link to="/">Take off you / face verse</Link>
+                            <Link to="/">O temple conch, bells / inscribed verse</Link>
+                            <Link to="/">Daydream / Face phrase of desires</Link>
+                            <Link to="/">All kites flew</Link>
+                            <Link to="/">Weeped bird</Link>
+                            <Link to="/">Resistant will all have a tone</Link>
+                            <Link to="/">How many words will be returned</Link>
+                        </div>
+                        <div className="lko-authors-list">
+                            <Link to="/">I can give you a voice</Link>
+                            <Link to="/">What is Suman's mind / face phrase</Link>
+                            <Link to="/">Have asked for rebirth</Link>
+                            <Link to="/">Everyone is fascinated by the much-awaited lie / Face verse</Link>
+                            <Link to="/">All leaves of dwarf trees</Link>
+                            <Link to="/">Snowflake</Link>
+                            <Link to="/">How many times to the bank of the river</Link>
+                            <Link to="/">Remember to thank</Link>
+                            <Link to="/">Geet apni pyaar ki main</Link>
+                            <Link to="/">Sitting / imprinted verse</Link>
+                            <Link to="/">To the darkest of the world</Link>
+                            <Link to="/">We chose the loser</Link>
+                            <Link to="/">I miss you</Link>
+                            <Link to="/">Take off you / face verse</Link>
+                            <Link to="/">O temple conch, bells / inscribed verse</Link>
+                            <Link to="/">Daydream / Face phrase of desires</Link>
+                            <Link to="/">All kites flew</Link>
+                            <Link to="/">Weeped bird</Link>
+                            <Link to="/">Resistant will all have a tone</Link>
+                            <Link to="/">How many words will be returned</Link>
+                        </div>
+                        <div className="lko-authors-list">
+                            <Link to="/">I can give you a voice</Link>
+                            <Link to="/">What is Suman's mind / face phrase</Link>
+                            <Link to="/">Have asked for rebirth</Link>
+                            <Link to="/">Everyone is fascinated by the much-awaited lie / Face verse</Link>
+                            <Link to="/">All leaves of dwarf trees</Link>
+                            <Link to="/">Snowflake</Link>
+                            <Link to="/">How many times to the bank of the river</Link>
+                            <Link to="/">Remember to thank</Link>
+                            <Link to="/">Geet apni pyaar ki main</Link>
+                            <Link to="/">Sitting / imprinted verse</Link>
+                            <Link to="/">To the darkest of the world</Link>
+                            <Link to="/">We chose the loser</Link>
+                            <Link to="/">I miss you</Link>
+                            <Link to="/">Take off you / face verse</Link>
+                            <Link to="/">O temple conch, bells / inscribed verse</Link>
+                            <Link to="/">Daydream / Face phrase of desires</Link>
+                            <Link to="/">All kites flew</Link>
+                            <Link to="/">Weeped bird</Link>
+                            <Link to="/">Resistant will all have a tone</Link>
+                            <Link to="/">How many words will be returned</Link>
+                        </div>
+                    </div>
+                </section>
+                <section className="lko-read-list">
+                    <div className="lko-read-tags">
+                        <span><Link to="/poems-by-tags">#love</Link></span>
+                        <span><Link to="/poems-by-tags">#sad</Link></span>
+                        <span><Link to="/poems-by-tags">#motivation</Link></span>
+                        <span><Link to="/poems-by-tags">#ishk</Link></span>
+                        <span><Link to="/poems-by-tags">#mohabbat</Link></span>
+                        <span><Link to="/poems-by-tags">#dil</Link></span>
+                        <span><Link to="/poems-by-tags">#yaad</Link></span>
+                        <span><Link to="/poems-by-tags">#zindegi</Link></span>
+                        <span><Link to="/poems-by-tags">#khwab</Link></span>
+                        <span><Link to="/poems-by-tags">#husn</Link></span>
+                        <span><Link to="/poems-by-tags">#gham</Link></span>
+                        <span><Link to="/poems-by-tags">#dard</Link></span>
+                        <span><Link to="/poems-by-tags">#intezer</Link></span>
+                        <span><Link to="/poems-by-tags">#judai</Link></span>
+                        <span><Link to="/poems-by-tags">#aashiq</Link></span>
+                        <span><Link to="/poems-by-tags">#bewafai</Link></span>
+                        <span><Link to="/poems-by-tags">#sher</Link></span>
+                        <span><Link to="/poems-by-tags">#parinda</Link></span>
+                        <span><Link to="/poems-by-tags">#raat</Link></span>
+                        <span><Link to="/poems-by-tags">#mausam</Link></span>
+                        <span><Link to="/poems-by-tags">#love</Link></span>
+                        <span><Link to="/poems-by-tags">#sad</Link></span>
+                        <span><Link to="/poems-by-tags">#motivation</Link></span>
+                        <span><Link to="/poems-by-tags">#ishk</Link></span>
+                        <span><Link to="/poems-by-tags">#mohabbat</Link></span>
+                        <span><Link to="/poems-by-tags">#dil</Link></span>
+                        <span><Link to="/poems-by-tags">#yaad</Link></span>
+                        <span><Link to="/poems-by-tags">#zindegi</Link></span>
+                        <span><Link to="/poems-by-tags">#khwab</Link></span>
+                        <span><Link to="/poems-by-tags">#husn</Link></span>
+                        <span><Link to="/poems-by-tags">#gham</Link></span>
+                        <span><Link to="/poems-by-tags">#dard</Link></span>
+                        <span><Link to="/poems-by-tags">#intezer</Link></span>
+                        <span><Link to="/poems-by-tags">#judai</Link></span>
+                        <span><Link to="/poems-by-tags">#aashiq</Link></span>
+                        <span><Link to="/poems-by-tags">#bewafai</Link></span>
+                        <span><Link to="/poems-by-tags">#sher</Link></span>
+                        <span><Link to="/poems-by-tags">#parinda</Link></span>
+                        <span><Link to="/poems-by-tags">#raat</Link></span>
+                        <span><Link to="/poems-by-tags">#mausam</Link></span>
+                        <span><Link to="/poems-by-tags">#love</Link></span>
+                        <span><Link to="/poems-by-tags">#sad</Link></span>
+                        <span><Link to="/poems-by-tags">#motivation</Link></span>
+                        <span><Link to="/poems-by-tags">#ishk</Link></span>
+                        <span><Link to="/poems-by-tags">#mohabbat</Link></span>
+                        <span><Link to="/poems-by-tags">#dil</Link></span>
+                        <span><Link to="/poems-by-tags">#yaad</Link></span>
+                        <span><Link to="/poems-by-tags">#zindegi</Link></span>
+                        <span><Link to="/poems-by-tags">#khwab</Link></span>
+                        <span><Link to="/poems-by-tags">#husn</Link></span>
+                        <span><Link to="/poems-by-tags">#gham</Link></span>
+                        <span><Link to="/poems-by-tags">#dard</Link></span>
+                        <span><Link to="/poems-by-tags">#intezer</Link></span>
+                        <span><Link to="/poems-by-tags">#judai</Link></span>
+                        <span><Link to="/poems-by-tags">#aashiq</Link></span>
+                        <span><Link to="/poems-by-tags">#bewafai</Link></span>
+                        <span><Link to="/poems-by-tags">#sher</Link></span>
+                        <span><Link to="/poems-by-tags">#parinda</Link></span>
+                        <span><Link to="/poems-by-tags">#raat</Link></span>
+                        <span><Link to="/poems-by-tags">#mausam</Link></span>
+                        <span><Link to="/poems-by-tags">#love</Link></span>
+                        <span><Link to="/poems-by-tags">#sad</Link></span>
+                        <span><Link to="/poems-by-tags">#motivation</Link></span>
+                        <span><Link to="/poems-by-tags">#ishk</Link></span>
+                        <span><Link to="/poems-by-tags">#mohabbat</Link></span>
+                        <span><Link to="/poems-by-tags">#dil</Link></span>
+                        <span><Link to="/poems-by-tags">#yaad</Link></span>
+                        <span><Link to="/poems-by-tags">#zindegi</Link></span>
+                        <span><Link to="/poems-by-tags">#khwab</Link></span>
+                        <span><Link to="/poems-by-tags">#husn</Link></span>
+                        <span><Link to="/poems-by-tags">#gham</Link></span>
+                        <span><Link to="/poems-by-tags">#dard</Link></span>
+                        <span><Link to="/poems-by-tags">#intezer</Link></span>
+                        <span><Link to="/poems-by-tags">#judai</Link></span>
+                        <span><Link to="/poems-by-tags">#aashiq</Link></span>
+                        <span><Link to="/poems-by-tags">#bewafai</Link></span>
+                        <span><Link to="/poems-by-tags">#sher</Link></span>
+                        <span><Link to="/poems-by-tags">#parinda</Link></span>
+                        <span><Link to="/poems-by-tags">#raat</Link></span>
+                        <span><Link to="/poems-by-tags">#mausam</Link></span>
+                        <span><Link to="/poems-by-tags">#love</Link></span>
+                        <span><Link to="/poems-by-tags">#sad</Link></span>
+                        <span><Link to="/poems-by-tags">#motivation</Link></span>
+                        <span><Link to="/poems-by-tags">#ishk</Link></span>
+                        <span><Link to="/poems-by-tags">#mohabbat</Link></span>
+                        <span><Link to="/poems-by-tags">#dil</Link></span>
+                        <span><Link to="/poems-by-tags">#yaad</Link></span>
+                        <span><Link to="/poems-by-tags">#zindegi</Link></span>
+                        <span><Link to="/poems-by-tags">#khwab</Link></span>
+                        <span><Link to="/poems-by-tags">#husn</Link></span>
+                        <span><Link to="/poems-by-tags">#gham</Link></span>
+                        <span><Link to="/poems-by-tags">#dard</Link></span>
+                        <span><Link to="/poems-by-tags">#intezer</Link></span>
+                        <span><Link to="/poems-by-tags">#judai</Link></span>
+                        <span><Link to="/poems-by-tags">#aashiq</Link></span>
+                        <span><Link to="/poems-by-tags">#bewafai</Link></span>
+                        <span><Link to="/poems-by-tags">#sher</Link></span>
+                        <span><Link to="/poems-by-tags">#parinda</Link></span>
+                        <span><Link to="/poems-by-tags">#raat</Link></span>
+                        <span><Link to="/poems-by-tags">#mausam</Link></span>
+                        <span><Link to="/">more.......</Link></span>
+                    </div>
+                </section>
+            </div>
+        </main>
     )
 }
 
