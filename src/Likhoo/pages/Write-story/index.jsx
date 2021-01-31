@@ -1,10 +1,10 @@
 import React from 'react';
+import { postStory } from '../../utilities';
 
 const WriteStory = () => {
     const initialState = {
         title: "",
         story: "",
-        draft: false,
     };
     const [app, setApp] = React.useState(initialState);
     const handleTextInput = (e) => {
@@ -12,13 +12,26 @@ const WriteStory = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("it's the submit button");
-        console.log(app);
+
+        postStory({ title: app.title, story: app.story, isPosted: true })
+            .then((response) => {
+                if (response.status === 200) {
+                    alert("Story posted successfully !!");
+                }
+            }
+            )
+            .catch((err) => { console.log(err) });
     }
     const handleDraft = (e) => {
         e.preventDefault();
-        console.log("it's the Draft button");
-        console.log(app);
+
+        postStory({ title: app.title, story: app.story, isPosted: false })
+            .then((response) => {
+                if (response.status === 200) {
+                    alert("saved to draft successfully !!");
+                }
+            })
+            .catch((err) => { console.log(err) });
     }
     return (
         <main className="lko-main">

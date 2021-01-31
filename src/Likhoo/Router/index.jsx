@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch ,Redirect } from "react-router-dom";
 import Read from "../pages/Read";
 import Home from "../pages/Home";
 import Audio from "../pages/Audio";
@@ -14,6 +15,14 @@ import WriteStory from "../pages/Write-story";
 import NavBar from "../components/NavBar";
 import Error from "../pages/Error";
 import "../CSS/style.css";
+
+const PrivateRoute = ({ component: Component, ...rest }) => (
+    <Route {...rest} render={props => (
+        localStorage.getItem('authKey')
+            ? <Component {...props} />
+            : <Redirect to={{ pathname: '/login', state: { from: props.location } }} />
+    )} />
+)
 
 
 const Navigation = () => {
@@ -31,8 +40,9 @@ const Navigation = () => {
                 <Route path="/poems-by-tags" exact component={PoemsByTags} />
                 <Route path="/publish" exact component={Publish} />
                 <Route path="/signup" exact component={SignUp} />
-                <Route path="/write" exact component={Write} />
-                <Route path="/write-story" exact component={WriteStory} />
+                {/* <Route path="/write" exact component={Write} /> */}
+                <PrivateRoute path="/write" component={Write}/>
+                <PrivateRoute path="/write-story" component={WriteStory}/>
                 <Route path="*" component={Error}/>
             </Switch>
         </Router>
