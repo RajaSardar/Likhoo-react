@@ -1,14 +1,16 @@
 import React from 'react';
+import { signup } from "../../utilities";
 
 const SignUp = () => {
     const initialState = {
         firstName: "",
         lastName: "",
-        userame: "",
+        username: "",
         email: "",
         gender: "female",
         password: "",
         confirmPassword: "",
+        mobile: ""
     }
     const [app, setApp] = React.useState(initialState);
 
@@ -23,6 +25,18 @@ const SignUp = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(app);
+
+        signup({
+            firstName: app.firstName,
+            lastName: app.lastName,
+            username: app.username,
+            email: app.email,
+            gender: app.gender,
+            password: app.password,
+            phoneNumber: app.mobile,
+        })
+            .then((response) => { console.log(response) })
+            .catch((error) => { console.log(error) });
     }
 
     return (
@@ -37,7 +51,7 @@ const SignUp = () => {
                         <input type="text" id="firstName" name="firstName" placeholder="First Name" required onChange={handleTextInput} />
                         <input type="text" id="lastName" name="lastName" placeholder="Last Name" required onChange={handleTextInput} />
                     </div>
-                    <input type="text" id="userame" name="userame" placeholder="Userame" required onChange={handleTextInput} />
+                    <input type="text" id="userame" name="username" placeholder="username" required onChange={handleTextInput} />
                     <input type="number" id="mobile" name="mobile" placeholder="Mobile Number" required onChange={handleTextInput} />
                     <input type="email" id="email" name="email" placeholder="Email Address" required onChange={handleTextInput} />
                     <div className='lko-signup-radio'>

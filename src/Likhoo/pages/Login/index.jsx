@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { login } from "../../utilities";
 
 const Login = () => {
+    const history = useHistory();
     const initialState = {
-        username: "",
+        loginId: "",
         password: "",
     };
     const [app, setApp] = React.useState(initialState);
@@ -13,6 +15,19 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(app);
+        if (app.loginId === initialState.loginId || app.password === initialState.password) {
+            alert("please fill all the fields !");
+        } else {
+            console.log("I'm On");
+            login(app)
+                .then(response => {
+                    if (response.data.success) {
+                        localStorage.setItem("authKey", response.data.token);
+                        history.push("/write");
+                    }
+                })
+                .catch((error) => console.log(error));
+        }
     }
     return (
         <main className="lko-main">
@@ -21,7 +36,7 @@ const Login = () => {
                 {/* <!-- <form action="/login" method="get"> --> */}
                 <form action="index.html" method="get">
                     {/* <!-- <label for="username">Username</label> --> */}
-                    <input type="text" id="username" name="username" placeholder="Email Address or Username" onChange={handleTextInput} />
+                    <input type="text" id="username" name="loginId" placeholder="Email Address or Username" onChange={handleTextInput} />
                     {/* <!-- <label for="password">Password</label> --> */}
                     <input type="password" id="password" name="password" placeholder="Password" onChange={handleTextInput} />
                     <input type="submit" value="Login" onClick={handleSubmit} />
